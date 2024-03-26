@@ -1,0 +1,20 @@
+
+x = float(input("Enter the value of x: "))
+n = float(input("Enter the value of n: "))
+
+choice = input("Choose operation - Pow, Add, Sub, Mul, Div: ")
+
+if choice == "Pow":
+    result = x ** n
+elif choice == "Add":
+    result = x + n
+elif choice == "Sub":
+    result = x - n
+elif choice == "Mul":
+    result = x * n
+elif choice == "Div":
+    result = x / n
+else:
+    result = "Invalid operation selected"
+
+print(f"Result of {choice} operation: {result}")
