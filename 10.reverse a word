@@ -1,0 +1,9 @@
+def reverse_string(word):
+    reversed_word = ""
+    for i in range(len(word) - 1, -1, -1):
+        reversed_word += word[i]
+    return reversed_word
+
+word = input("String: ")
+reversed_word = reverse_string(word)
+print("Reverse String:", reversed_word)
