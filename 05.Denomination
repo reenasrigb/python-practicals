@@ -1,0 +1,12 @@
+denomination1 = int(input("Enter the 1st Denomination: "))
+notes1 = int(input("Enter the 1st Denomination number of notes: "))
+denomination2 = int(input("Enter the 2nd Denomination: "))
+notes2 = int(input("Enter the 2nd Denomination number of notes: "))
+denomination3 = int(input("Enter the 3rd Denomination: "))
+notes3 = int(input("Enter the 3rd Denomination number of notes: "))
+denomination4 = int(input("Enter the 4th Denomination: "))
+notes4 = int(input("Enter the 4th Denomination number of notes: "))
+
+total_balance = (denomination1 * notes1) + (denomination2 * notes2) + (denomination3 * notes3) + (denomination4 * notes4)
+
+print("Total Available Balance in ATM:", total_balance)
