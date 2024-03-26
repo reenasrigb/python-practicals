@@ -1,0 +1,7 @@
+decimal_num = int(input("Enter the decimal number: "))
+
+binary_num = bin(decimal_num).replace("0b", "")
+octal_num = oct(decimal_num).replace("0o", "")
+
+print(f"Binary Number = {binary_num}")
+print(f"Octal Number = {octal_num}")
