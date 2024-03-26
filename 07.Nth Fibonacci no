@@ -1,0 +1,10 @@
+def fibanocci(n):
+    if n<=1:
+        return n
+    else:
+        return fibanocci(n-1)+fibanocci(n-2)
+num_terms=int(input("enter the range "))
+
+print("fs")
+for i in range(num_terms):
+ print(fibanocci(i))
