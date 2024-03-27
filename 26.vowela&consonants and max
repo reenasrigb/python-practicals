@@ -1,0 +1,23 @@
+def count_vowels_consonants(statement):
+    vowels = 0
+    consonants = 0
+    for char in statement:
+        if char.isalpha():
+            if char.lower() in 'aeiou':
+                vowels += 1
+            else:
+                consonants += 1
+    return vowels, consonants
+
+def max_count_vowel_consonant(statement):
+    vowels, consonants = count_vowels_consonants(statement)
+    if vowels > consonants:
+        return "Number of vowels = {}, Number of consonants = {}".format(vowels, consonants)
+    else:
+        return "Number of consonants = {}, Number of vowels = {}".format(consonants, vowels)
+
+
+statement = input("enter the string")
+
+
+print(max_count_vowel_consonant(statement))
