@@ -1,0 +1,15 @@
+year = input("Enter year:")
+c = year.split("/")
+b = list(map(int, c))
+year = b[2]
+
+if year % 400 == 0:
+    print("%d is a leap year" % year)
+elif year % 100 == 0:
+    print("%d is not a leap year:" % year)
+elif year % 4 == 0:
+    print("%d is a leap year:" % year)
+else:
+    print("Not a leap year:")
+    m = year % 4
+    print("Previous leap year", year - m)
