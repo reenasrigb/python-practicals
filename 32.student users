@@ -1,0 +1,5 @@
+total_users = int(input("enter the no of total users"))
+staff_users = int(input("enter the no of staff users"))
+
+student_users = total_users - staff_users - (staff_users // 3)
+print("Student Users:", student_users)
